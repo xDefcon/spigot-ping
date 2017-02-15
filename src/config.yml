@@ -2,3 +2,9 @@
 
 # Custom string for /ping - use %ping% to identify the ping of the user.
 pingMessage: "&a[Ping] &7Your ping is: &a%ping%ms"
+
+# Set this to true if you want to enable the permission system.
+enable-permissions: false
+
+# Customize the no-permission error.
+permissionMessage: "&cYou do not have permissions to execute this command."

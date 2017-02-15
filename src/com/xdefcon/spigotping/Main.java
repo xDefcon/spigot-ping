@@ -38,12 +38,19 @@ public class Main extends JavaPlugin {
 
     public boolean onCommand(CommandSender sender, Command c, String label, String[] args) {
         final Player p = (Player) sender;
-        if (c.getName().equalsIgnoreCase("ping")) {
-            String ping = "" + getPing(p);
-            String customMex = config.getString("pingMessage").replaceAll("%ping%", ping);
-            p.sendMessage(ChatColor.translateAlternateColorCodes('&', customMex));
-            return false;
+        if (!c.getName().equalsIgnoreCase("ping")) {
+            return true;
         }
-        return false;
+        if (config.getBoolean("enable-permissions")) {
+            if (!p.hasPermission("spigotping.ping")) {
+                String noPerm = config.getString("permissionMessage");
+                p.sendMessage(ChatColor.translateAlternateColorCodes('&', noPerm));
+                return true;
+            }
+        }
+        String ping = "" + getPing(p);
+        String customMex = config.getString("pingMessage").replaceAll("%ping%", ping);
+        p.sendMessage(ChatColor.translateAlternateColorCodes('&', customMex));
+        return true;
     }
 }
