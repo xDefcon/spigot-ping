@@ -1,0 +1,4 @@
+# SpigotPing by xDefcon - Configuration file
+
+# Custom string for /ping - use %ping% to identify the ping of the user.
+pingMessage: "&a[Ping] &7Your ping is: &a%ping%ms"

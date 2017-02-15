@@ -1,0 +1,8 @@
+name: SpigotPing
+main: Main
+author: xDefcon
+version: 1.2
+description: "SpigotPing a simple and customizable plugin to show your ping."
+commands:
+    ping:
+      description: The main command for SpigotPing.
