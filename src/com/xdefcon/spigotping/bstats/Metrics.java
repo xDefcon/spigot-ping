@@ -20,9 +20,10 @@ import java.util.zip.GZIPOutputStream;
 
 /**
  * bStats collects some data for plugin authors.
- * <p>
+ *
  * Check out https://bStats.org/ to learn more about bStats!
  */
+@SuppressWarnings("ALL")
 public class Metrics {
 
     // The version of this bStats class
@@ -307,6 +308,7 @@ public class Metrics {
     /**
      * A enum which is used for custom maps.
      */
+    @SuppressWarnings({"CanBeFinal", "unused"})
     public enum Country {
 
         /**
@@ -622,6 +624,7 @@ public class Metrics {
     /**
      * Represents a custom chart.
      */
+    @SuppressWarnings({"unchecked", "unused"})
     public static abstract class CustomChart {
 
         // The id of the chart
@@ -665,6 +668,7 @@ public class Metrics {
     /**
      * Represents a custom simple pie.
      */
+    @SuppressWarnings({"unchecked", "unused"})
     public static abstract class SimplePie extends CustomChart {
 
         /**
@@ -699,6 +703,7 @@ public class Metrics {
     /**
      * Represents a custom advanced pie.
      */
+    @SuppressWarnings({"unchecked", "unused"})
     public static abstract class AdvancedPie extends CustomChart {
 
         /**
@@ -748,6 +753,7 @@ public class Metrics {
     /**
      * Represents a custom single line chart.
      */
+    @SuppressWarnings({"unchecked", "unused"})
     public static abstract class SingleLineChart extends CustomChart {
 
         /**
@@ -783,6 +789,7 @@ public class Metrics {
     /**
      * Represents a custom multi line chart.
      */
+    @SuppressWarnings({"unchecked", "unused"})
     public static abstract class MultiLineChart extends CustomChart {
 
         /**
@@ -833,6 +840,7 @@ public class Metrics {
     /**
      * Represents a custom simple bar chart.
      */
+    @SuppressWarnings({"unchecked", "unused"})
     public static abstract class SimpleBarChart extends CustomChart {
 
         /**
@@ -876,6 +884,7 @@ public class Metrics {
     /**
      * Represents a custom advanced bar chart.
      */
+    @SuppressWarnings({"unchecked", "unused"})
     public static abstract class AdvancedBarChart extends CustomChart {
 
         /**
@@ -930,6 +939,7 @@ public class Metrics {
     /**
      * Represents a custom simple map chart.
      */
+    @SuppressWarnings({"unchecked", "unused"})
     public static abstract class SimpleMapChart extends CustomChart {
 
         /**
@@ -966,6 +976,7 @@ public class Metrics {
     /**
      * Represents a custom advanced map chart.
      */
+    @SuppressWarnings({"unchecked", "unused"})
     public static abstract class AdvancedMapChart extends CustomChart {
 
         /**
