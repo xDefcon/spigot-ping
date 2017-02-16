@@ -24,19 +24,19 @@ public class PingCommand implements CommandExecutor {
         }
 
         final Player p = (Player) sender;
-        if (plugin.getConfig().getBoolean("enable-permissions")) {
+        if (plugin.getConfig().getBoolean("permission-system.enabled")) {
             if (!p.hasPermission("spigotping.ping")) {
                 String noPerm = plugin.getConfig().getString("permission-system.no-perm-message");
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', noPerm));
                 return true;
             }
         }
-        if (plugin.getConfig().getBoolean("sound-manager.enabled")) {
-            SoundUtil.playSound(p, plugin.getConfig().getString("sound-manager.sound-type"));
-        }
         String ping = "" + PingUtil.getPing(p);
         String customMex = plugin.getConfig().getString("ping-command.ping-message").replaceAll("%ping%", ping);
         p.sendMessage(ChatColor.translateAlternateColorCodes('&', customMex));
+        if (plugin.getConfig().getBoolean("sound-manager.enabled")) {
+            SoundUtil.playSound(p, plugin.getConfig().getString("sound-manager.sound-type"));
+        }
         return true;
     }
 
