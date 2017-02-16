@@ -1,8 +1,10 @@
 name: SpigotPing
-main: com.xdefcon.spigotping.Main
+main: com.xdefcon.spigotping.SpigotPing
 author: xDefcon
-version: 1.3
+version: 2.0
 description: "SpigotPing a simple and customizable plugin to show your ping."
 commands:
     ping:
       description: The main command for SpigotPing.
+    pingreload:
+      description: Reloads the plugin.

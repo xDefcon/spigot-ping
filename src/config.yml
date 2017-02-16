@@ -1,10 +1,37 @@
+#########################################################################
 # SpigotPing by xDefcon - Configuration file
+# https://www.spigotmc.org/resources/spigotping.24419/
+# Please check for updates, and remember to update the config if needed!
+#########################################################################
 
-# Custom string for /ping - use %ping% to identify the ping of the user.
-pingMessage: "&a[Ping] &7Your ping is: &a%ping%ms"
+# Section releated to /ping command.
+ping-command:
+  # Customize the output of the command, use %ping% to indicate player's latency.
+  ping-message: "&a[Ping] &7Your ping is: &a%ping%ms"
 
-# Set this to true if you want to enable the permission system.
-enable-permissions: false
+# Section releated to the per command permission system.
+permission-system:
+  # Set this to true if you want to enable the permission system.
+  enabled: false
+  # Customize the message sent to the players if they do not have required permission.
+  no-perm-message: "&cYou do not have permissions to execute this command."
 
-# Customize the no-permission error.
-permissionMessage: "&cYou do not have permissions to execute this command."
+# Section releated to the per command permission system.
+sound-manager:
+  # Set this to true if you want to enable sound after the ping command.
+  enabled: true
+  # Choose the sound type. A list of all available sounds is retrievable here: http://bit.ly/bukkit-sounds
+  sound-type: "ENTITY_PLAYER_LEVELUP"
+  # Customize the volume (min: 0.0 - max: 1.0)
+  volume: 1.0
+  # Customize the pitch (playing speed, 1.0 = normal speed, 0.5 = half speed)
+  pitch: 1.0
+
+# Section releated to the tablist management (you can open the tablist by pressing TAB in game).
+tablist:
+  # Set this to true if you want to show player's ping in the tablist.
+  enabled: true
+  # Customize the tablist prefix, use %ping% to indicate player's latency. You do not need to put a space at the end.
+  prefix: "&7[&a%ping%ms&7]"
+  # Update delay time (in seconds) - 5 means that the tablist is updated every 5 seconds.
+  update-delay: 5
