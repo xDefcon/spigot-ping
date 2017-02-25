@@ -34,7 +34,9 @@ sound-manager:
 tablist:
   # Set this to true if you want to show player's ping in the tablist.
   enabled: true
-  # Customize the tablist prefix, use %ping% to indicate player's latency. You do not need to put a space at the end.
+  # Customize the tablist prefix, use %ping% to indicate player's latency. You do not need to put a space at the end. Set this to "" to disable.
   prefix: "&7[&a%ping%ms&7]"
+  # Customize the tablist suffix, use %ping% to indicate player's latency. Set this to "" to disable.
+  suffix: ""
   # Update delay time (in seconds) - 5 means that the tablist is updated every 5 seconds.
   update-delay: 5
