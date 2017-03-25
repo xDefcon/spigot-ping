@@ -23,8 +23,8 @@ public class PingTabList extends BukkitRunnable {
             }
             String suffix = plugin.getConfig().getString("tablist.suffix");
             if (!suffix.equals("")) {
-                player.setPlayerListName(ChatColor.translateAlternateColorCodes('&',
-                        currentName + " " + prefix.replace("%ping%", "" + PingUtil.getPing(player))));
+                player.setPlayerListName(currentName + " " + ChatColor.translateAlternateColorCodes('&',
+                        suffix.replace("%ping%", "" + PingUtil.getPing(player))));
             }
         }
     }
