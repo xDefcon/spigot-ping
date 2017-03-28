@@ -15,7 +15,12 @@ public class PingTabList extends BukkitRunnable {
 
     public void run() {
         for (Player player : this.plugin.getServer().getOnlinePlayers()) {
-            String currentName = player.getDisplayName();
+            String currentName;
+            if (plugin.getConfig().getBoolean("tablist.show-real-name")) {
+                currentName = player.getName();
+            } else {
+                currentName = player.getDisplayName();
+            }
             String prefix = plugin.getConfig().getString("tablist.prefix");
             if (!prefix.equals("")) {
                 player.setPlayerListName(ChatColor.translateAlternateColorCodes('&',

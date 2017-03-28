@@ -46,6 +46,9 @@ sound-manager:
 tablist:
   # Set this to true if you want to show player's ping in the tablist.
   enabled: true
+  # Set this to true if you want to display the name of the player WITHOUT colors added by plugins like Essentials.
+  # Set to false if you want to show the "display-name" (the name of the player WITH colors added by external plugins).
+  show-real-name: true
   # Customize the tablist prefix, use %ping% to indicate player's latency. You do not need to put a space at the end. Set this to "" to disable.
   prefix: "&7[&a%ping%ms&7]"
   # Customize the tablist suffix, use %ping% to indicate player's latency. Set this to "" to disable.
