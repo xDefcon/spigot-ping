@@ -4,7 +4,7 @@
 # Please check for updates, and remember to update the config if needed!
 #########################################################################
 
-# Section releated to /ping command.
+# Section related to /ping command.
 ping-command:
   # Customize the output of the command, use %ping% to indicate player's latency.
   ping-message: "&a[Ping] &7Your ping is: &a%ping%ms"
@@ -12,14 +12,14 @@ ping-command:
   # Use %target% to indicate the name of the target player, use %ping% to indicate player's latency.
   ping-target-message: "&a[Ping] &7The ping of &a%target% &7is: &a%ping%ms"
 
-# Section releated to the per command permission system.
+# Section related to the per command permission system.
 permission-system:
   # Set this to true if you want to enable the permission system.
   enabled: false
   # Customize the message sent to the players if they do not have required permission.
   no-perm-message: "&cYou do not have permissions to execute this command."
 
-# Section releated to the /ping <targetPlayer> command
+# Section related to the /ping <targetPlayer> command
 others-ping:
   # Set this to false if you want to DISALLOW users to check the ping of another player.
   show-other-players-ping: true
@@ -28,7 +28,7 @@ others-ping:
   # Customize the message sent to the players if the specified player can not be found.
   player-not-found: "&cThe specified player is not online."
 
-# Section releated to the per command permission system.
+# Section related to the per command permission system.
 sound-manager:
   # Set this to true if you want to enable sound after the ping command.
   enabled: true
@@ -42,7 +42,7 @@ sound-manager:
   # Customize the pitch (playing speed, 1.0 = normal speed, 0.5 = half speed)
   pitch: 1.0
 
-# Section releated to the tablist management (you can open the tablist by pressing TAB in game).
+# Section related to the tablist management (you can open the tablist by pressing TAB in game).
 tablist:
   # Set this to true if you want to show player's ping in the tablist.
   enabled: true
