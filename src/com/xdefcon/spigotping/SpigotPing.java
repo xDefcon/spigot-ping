@@ -28,7 +28,7 @@ public class SpigotPing extends JavaPlugin {
     public void onDisable() {
         instance = null;
         this.getLogger().info("Cancelling tasks...");
-        this.getServer().getScheduler().cancelAllTasks();
+        this.getServer().getScheduler().cancelTasks(this);
     }
 
     private void registerTasks() {
@@ -49,7 +49,7 @@ public class SpigotPing extends JavaPlugin {
 
     public void reload() {
         this.getLogger().info("Reloading the plugin...");
-        this.getServer().getScheduler().cancelAllTasks();
+        this.getServer().getScheduler().cancelTasks(this);
         this.reloadConfig();
         this.registerTasks();
         this.getLogger().info("Plugin reloaded.");
