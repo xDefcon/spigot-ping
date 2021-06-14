@@ -36,7 +36,7 @@ sound-manager:
   # WARNING: The link provided is a Sound list for 1.11.2, if you are using other versions, do a quick search for
   # specific sounds, search something like "Bukkit 1.8 Sound Enum".
   # EXAMPLE: NOTE_PLING will work in versions below 1.9, for 1.9 and greater you should use BLOCK_NOTE_PLING
-  sound-type: "NOTE_PLING"
+  sound-type: "BLOCK_NOTE_BLOCK_PLING"
   # Customize the volume (min: 0.0 - max: 1.0)
   volume: 1.0
   # Customize the pitch (playing speed, 1.0 = normal speed, 0.5 = half speed)
